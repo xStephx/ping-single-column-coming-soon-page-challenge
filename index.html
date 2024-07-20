@@ -20,15 +20,35 @@
   <title>Frontend Mentor | Ping coming soon page</title>
 </head>
 
-<body>
-  We are launching soon!
-
-  Subscribe and get notified
-
-  Notify Me
-
-  &copy; Copyright Ping. All rights reserved.
-
+<body class="font-LibreFranklin">
+  <!-- Ping Coming Soon Page Section -->
+   <section class="container mx-auto md:px-24 px-12 md:py-8">
+    <!-- Logo -->
+    <div class="flex justify-center items-center py-10">
+      <img src="assets/images/logo.svg" alt="PING Logo">
+    </div>
+    <!-- Header -->
+    <h1 class="text-center md:text-5xl text-2xl text-Gray font-extralight pb-4">We are launching <span class="text-VeryDarkBlue font-semibold">soon!</span></h1>
+    <!-- Subheader -->
+    <h2 class="text-center pb-8 text-VeryDarkBlue md:text-2xl text-lg font-light">Subscribe and get notified</h2>
+    <!-- Email Form For Notify -->
+    <form class="flex justify-center items-center md:flex-row flex-col">
+      <input type="text" placeholder="Your email address..." class="border border-PaleBlue placeholder-PaleBlue font-extralight rounded-full md:pr-28 md:pl-7 pl-6 md:py-5 py-3 md:mx-2 my-4 md:w-auto w-full">
+      <button class="bg-Blue text-white rounded-full px-16 md:py-5 py-3 hover:opacity-80 md:w-auto w-full transition-all duration-300">Notify Me</button>
+    </form>
+    <!-- Dashboard Ilustration -->
+    <div class="flex justify-center items-center md:py-16 py-24">
+      <img src="assets/images/illustration-dashboard.png" alt="Dashboard Ilustration" class="max-w-full md:max-w-[720px]">
+    </div>
+    <!-- Social Media -->
+    <div class="text-center pb-5">
+      <i class="fa-brands fa-facebook-f p-3 rounded-full cursor-pointer text-Blue hover:bg-Blue hover:text-white transition-all duration-300"></i>
+      <i class="fa-brands fa-twitter p-3 rounded-full cursor-pointer text-Blue hover:bg-Blue hover:text-white transition-all duration-300"></i>
+      <i class="fa-brands fa-instagram p-3 rounded-full cursor-pointer text-Blue hover:bg-Blue hover:text-white transition-all duration-300"></i>
+    </div>
+    <!-- Footer -->
+    <p class="text-center text-xs text-Gray font-light pb-5">&copy; Copyright Ping. All rights reserved.</p>
+   </section>
   <!-- Custom JS -->
   <script src="assets/js/script.js"></script>
 </body>
