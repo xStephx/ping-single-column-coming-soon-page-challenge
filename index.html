@@ -32,10 +32,11 @@
     <!-- Subheader -->
     <h2 class="text-center pb-8 text-VeryDarkBlue md:text-2xl text-lg font-light">Subscribe and get notified</h2>
     <!-- Email Form For Notify -->
-    <form class="flex justify-center items-center md:flex-row flex-col">
-      <input type="text" placeholder="Your email address..." class="border border-PaleBlue placeholder-PaleBlue font-extralight rounded-full md:pr-28 md:pl-7 pl-6 md:py-5 py-3 md:mx-2 my-4 md:w-auto w-full">
-      <button class="bg-Blue text-white rounded-full px-16 md:py-5 py-3 hover:opacity-80 md:w-auto w-full transition-all duration-300">Notify Me</button>
-    </form>
+    <form class="relative max-w-[700px] mx-auto flex flex-col md:flex-row justify-center items-center">
+      <input id="email-input" type="text" placeholder="Your email address..." class="focus:outline-none focus:border-PaleBlue border border-PaleBlue placeholder-PaleBlue font-extralight rounded-full md:pr-28 md:pl-7 pl-6 md:py-5 py-3 md:mx-2 md:w-auto w-full">
+      <p id="error-message" class="md:absolute md:top-[80px] md:left-[100px] italic md:text-sm text-xs md:py-1 py-3 md:order-3 order-1 text-LightRed"></p>
+      <button id="submit-btn" class="bg-Blue text-white rounded-full px-16 md:py-5 py-3 hover:opacity-80 md:w-auto w-full transition-all duration-300 md:order-2 order-2">Notify Me</button>
+    </form>    
     <!-- Dashboard Ilustration -->
     <div class="flex justify-center items-center md:py-16 py-24">
       <img src="assets/images/illustration-dashboard.png" alt="Dashboard Ilustration" class="max-w-full md:max-w-[720px]">
